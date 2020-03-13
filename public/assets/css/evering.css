@@ -1,0 +1,31 @@
+/* blur */
+.bg-blur, .bg-deepblur, .bg-whiteblur  {
+    background-color: #ffffffa8 !important;
+}
+.bg-blackblur {
+    background-color: #00000093 !important;
+}
+@supports ((-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))) {
+    .bg-blur, .bg-deepblur, .bg-blackblur {
+        background: transparent !important;
+    }
+    .bg-blur, .bg-whiteblur, .bg-blackblur {
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+    .bg-deepblur {
+        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(15px);
+    }
+    .bg-whiteblur {
+        background:  #ffffffc2 !important;
+    }
+    .bg-blackblur {
+        background-color: #00000062 !important;
+    }
+}
+
+/* Home evering main block */
+.home-info {
+    
+}
