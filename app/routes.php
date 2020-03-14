@@ -1,9 +1,12 @@
 <?php
-$router->map( 'GET', '/', function() {
-    global $smarty;
-    $smarty->display("welcome.tpl");
-}, 'home');
-$router->map( 'GET', '/test', 'home_controller#display_item', 'test');
+
+// Routes definitions
+
+// Landing page route
+$router->map( 'GET', '/', 'HomeController#displayHome', 'home');
+
+
+// Routes function
 
 // match current request url
 $match = $router->match();
