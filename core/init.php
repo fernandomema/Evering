@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$_ENV = parse_ini_file (__DIR__.'/../.env');
+$_ENV = file_exists(__DIR__.'/../.env') ? parse_ini_file (__DIR__.'/../.env') : parse_ini_file (__DIR__.'/../.env.example');
 if ($_ENV['ROOT'] == '/') {
     $_ENV['ROOT'] = realpath(__DIR__.'/../').'/';
 }
