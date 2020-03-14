@@ -3,6 +3,8 @@
 # Evering
 Evering PHP Framework
 
+A PHP framework with lightweight in mind
+
 # Contributing
 Feel free to submit issues and enhancement requests.
 
